@@ -15,6 +15,7 @@ void findDuplicates(int arr[], int n) {
                 arr[j] = -1; // mark as visited
             }
         }
+        
 
         if (count > 1) {
             cout << arr[i] << " ";
