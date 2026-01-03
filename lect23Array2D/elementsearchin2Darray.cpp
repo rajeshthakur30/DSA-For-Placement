@@ -13,15 +13,17 @@ return 0;
 }
 
 int main(){
-    //creating 2d array
-    int arr[3][4];
-//taking input->column wise input
+//creating 2d array
+int arr[3][4];
+cout<<"Enter the element "<<endl;
+//taking input->row wise input
 for( int row=0;row<3;row++){
-        for( int col=0;col<4;col++){
+for( int col=0;col<4;col++){
    cin>>arr[row][col];
     }
 }
 
+cout<<"Printing the arrary"<<endl;
 //print
 for(int row=0;row<3;row++){
 for(int col=0;col<4;col++){

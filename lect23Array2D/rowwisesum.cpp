@@ -1,41 +1,45 @@
 #include<iostream>
 using namespace std;
 
-bool isPresent(int arr[][3],int target,int row,int col){
-    for( int row=0;row<3;row++){
-    for( int col=0;col<3;col++){
-  if(arr[row][col] == target){
-    return 1;
-  }
-}
-}
-return 0;
-}
+//row wise sum
+// void printSum(int arr[][3],int row,int col){
+// cout<<"Printing Sum->"<<endl;
+// for(int row=0;row<3;row++){
+// int sum=0;
+// for(int col=0;col<3;col++){
+// sum +=arr[row][col];
+// }
+// cout<< sum<<" ";
 
+// }
+// cout<<endl;
+// }
 
-void printSum(int arr[][3],int row,int col){
+//col wise sum
+void printColSum(int arr[][3],int row,int col){
 cout<<"Printing Sum->"<<endl;
-for(int row=0;row<3;row++){
-int sum=0;
 for(int col=0;col<3;col++){
+int sum=0;
+for(int row=0;row<3;row++){
 sum +=arr[row][col];
 }
 cout<< sum<<" ";
+
 }
 cout<<endl;
 }
 
-
 int main(){
-    //creating 2d array
-    int arr[3][3];
- cout<<"Enter the element"<<endl;
+  //creating 2d array
+int arr[3][3];
+cout<<"Enter the element"<<endl;
 //taking input->column wise input
 for( int row=0;row<3;row++){
 for( int col=0;col<3;col++){
    cin>>arr[row][col];
     }
 }
+
 cout<<"Printing the array" <<endl;
 //print
 for(int row=0;row<3;row++){
@@ -44,18 +48,7 @@ for(int col=0;col<3;col++){
 }
 cout<<endl;
 }
-cout<<"enter the element to search"<<endl;
-int target;
-cin>>target;
-
-if(isPresent(arr,target,3,3)){
-    cout<<"Element found"<<endl;
-}
-else{
-    cout<<"Not found"<<endl;
-}
-
-printSum(arr,3,3);
+printColSum(arr,3,3);
 return 0;
 }
 
