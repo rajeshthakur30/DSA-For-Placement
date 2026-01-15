@@ -10,6 +10,7 @@ void sayDigit(int n,string arr[]){
     //processing
     int digit=n%10;
     n=n/10;
+//cout<<arr[digit]<<"  "; agar hm yaha likhte hai toh output ulta aata hai
 
     //recursive calld
      sayDigit(n,arr);
