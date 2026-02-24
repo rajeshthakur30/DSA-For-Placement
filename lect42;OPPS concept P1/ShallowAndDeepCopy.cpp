@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 class Hero{
@@ -33,7 +34,7 @@ Hero(int health){
     }
     void print(){
         cout<<endl;
-        cout<<"Name:"<< this->name <<",";
+        cout<<"[ Name:"<< this->name <<",";
         cout<<"health "<<this->health<<" ,";
         cout<<"level "<<this->level<<"]";
         cout<<endl;
@@ -54,16 +55,17 @@ Hero(int health){
     void setLevel(char ch){
         level=ch;
     }
-    void setName( char name[]){
+    void setName(char name[]){
         strcpy(this->name, name);
     }
 };
 int main(){
+
    Hero hero1;
+
    hero1.setHealth(12);
    hero1.setLevel('D');
    char name[7]="Babbar";
    hero1.setName(name);
-   hero1.print()
-   return 0;
-}
+   hero1.print();
+ }
