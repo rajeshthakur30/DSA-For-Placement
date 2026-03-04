@@ -24,6 +24,7 @@ class Male: public Human{//male inherit kar raha hai human ko
     cout<<"Male sleeping"<<endl;
   }
 };
+
 int main(){
 Male obj;
 
@@ -40,3 +41,5 @@ obj.sleep();
 return 0;
 
 }
+
+
