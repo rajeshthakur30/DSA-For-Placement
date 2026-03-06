@@ -85,11 +85,11 @@ print(head);
 insertAtTail(tail,15);
 print(head);
 
-insertAtPosition(tail,head,4,22);
+insertAtPosition(tail,head,1,22);
 print(head);
 
-cout<<"head"<<head->data<<endl;
-cout<<"tail"<<tail->data<<endl;
+cout<<"head "<<head->data<<endl;
+cout<<"tail "<<tail->data<<endl;
 
     return 0;
 }
