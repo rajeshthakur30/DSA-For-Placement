@@ -14,6 +14,7 @@ class Node{
     }
 };
 
+//insert at head
 void insertAtHead(Node* &head,int d){
 
     //new node create
@@ -22,6 +23,8 @@ void insertAtHead(Node* &head,int d){
     head=temp;
 }
 
+
+//insert at tail
 void insertAtTail(Node* &tail,int d){
     //new node created 
     Node* temp=new Node(d);
@@ -42,6 +45,8 @@ void print(Node* &head){
     cout<<endl;
 }
 
+
+// code for insert at any position
 void insertAtPosition(Node* &tail,Node* &head,int position,int d){
     //insert at  start
     if(position==1){
